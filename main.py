@@ -9,7 +9,7 @@ executor = Executor(app)
 def hello():
     return "All caught up !"
 
-@app.route("/longjobs")
+@app.route("/tab")
 def index():
     executor.submit(long_running_job)
     return "Triggered a Job !"
